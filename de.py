@@ -213,6 +213,6 @@ if __name__ == '__main__':
         os.makedirs(LOG_DIR)
     logging.basicConfig(format=LOG_FORMAT, filename=LOG_FILE, level=LOG_LEVEL)
     if sys.argv[1] == 'decrypt':
-        assert not read_from_file(FILE_PATH) == '', "there is nothing to decrypt...乁( ◔ ౪◔)ㄏ"
+        assert not read_from_file(FILE_PATH) == '', 'file empty'
     main()
 
